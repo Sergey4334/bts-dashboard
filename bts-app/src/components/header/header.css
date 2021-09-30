@@ -1,0 +1,60 @@
+.header {
+  color: #fff;
+  padding: 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav-header {
+  margin: 10px 15px;
+}
+
+.nav-list li {
+  color: #86899a;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px 15px;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s;
+}
+.nav-list li:hover {
+  color: #f0ecfa;
+  border-bottom: 2px solid #2bf0ab;
+}
+.icon-auth {
+  margin: 0px 10px;
+}
+.btn-logout {
+  background-color: #2bf0ab;
+  height: 30px;
+  width: 100px;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #18a877;
+  transition: 0.5s;
+}
+.btn-logout:hover {
+  background-color: #9ce7cd;
+}
+.auth-block {
+  margin-left: 10px;
+}
+
+.green-color {
+  color: #2bf0ab;
+}
+
+@keyframes logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
