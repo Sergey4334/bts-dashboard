@@ -19,7 +19,7 @@ const Header = () => {
       </nav>
       <div className="auth-block df">
         <div className="icon-auth">
-          <img src={iconAuth} alt="Auth icon" width="30" />
+          <img src={iconAuth} alt="Auth icon" width="25" />
         </div>
         <div className="logout-auth">
           <button className="btn-logout">logout <img src={iconLogout} alt="Logout"  width="10"/></button>

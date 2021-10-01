@@ -4,7 +4,7 @@ import './filter.css';
 const Filter = () => {
   return (
     <div className="filter">
-      <div className="filter-input df">
+      <div className="filter-input">
         <div className="block-input">
           <div className="lable-filter">Buy advice exchange</div>
           <input type="text" className="input-filter" />
@@ -23,7 +23,7 @@ const Filter = () => {
         </div>
       </div>
       <div className="filter-btn">
-        <button className="clear-filter">Clear Filter</button>
+        <button className="clear-filter">Clear filter</button>
         <button className="btn-filter">Filter Arbitrage</button>
       </div>
     </div>
