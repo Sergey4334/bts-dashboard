@@ -6,20 +6,33 @@ import RowTable from '../row-table';
 
 import './dashboard-page.css';
 
-export default class PeoplePage extends Component {
+export default class DashboardPage extends Component {
 
   state = {
-    table: null,
+    itemData: [
+      this.createItem('Drink Coffe'),
+      this.createItem('Create Awesome App'),
+      this.createItem('Have a lunch'),
+    ]
+  };
+
+  createItem(label) {
+    return {
+      label,
+      id: this.maxId++
+    };
   };
 
   render() {
+
+    const itemCount = this.state.itemData.length;
 
     const leftTable = (
       <LeftTable />
     );
 
     const rightTable = (
-      <RightTable />
+      <RightTable activeItem={itemCount} />
     );
 
     return (

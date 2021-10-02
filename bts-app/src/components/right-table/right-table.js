@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import "./right-table.css";
 
-export default class RightTable extends Component {
-  render() {
+const RightTable = ({activeItem}) => {
     return (
       <div className="right-table">
         <div className="profit-curency">
@@ -35,7 +34,7 @@ export default class RightTable extends Component {
             </div>
             <div className="active-curency item">
               <div className="title-item">Active instance</div>
-              <div className="curency-value">7</div>
+              <div className="curency-value">{activeItem}</div>
             </div>
             <div className="total-curency item">
               <div className="title-item">Total instance</div>
@@ -45,5 +44,5 @@ export default class RightTable extends Component {
         </div>
       </div>
     );
-  }
-}
+};
+export default RightTable;
