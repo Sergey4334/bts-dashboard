@@ -8,6 +8,10 @@
 -moz-box-shadow: 2px 5px 7px 2px rgba(210, 219, 225, 0.2);
 box-shadow: 2px 5px 7px 2px rgba(210, 219, 225, 0.2);
 }
+.table-list-title {
+  border-bottom: 2px solid #c7c6cb;
+  padding-bottom: 10px;
+}
 .list-title {
   display: flex;
   align-items: center;
@@ -15,5 +19,46 @@ box-shadow: 2px 5px 7px 2px rgba(210, 219, 225, 0.2);
   padding: 10px 15px;
 }
 .list-title div {
-  width: 200px;
+  font-size: 12px;
+}
+.list-title div:nth-child(1) {
+  width: 115px;
+}
+.list-title div:nth-child(2) {
+  width: 60px;
+  padding-right: 10px;
+}
+.list-title div:nth-child(3) {
+  width: 123px;
+}
+.list-title div:nth-child(4) {
+  width: 80px;
+}
+.list-title div:nth-child(5) {
+  width: 60px;
+}
+.list-title div:nth-child(6) {
+  width: 100px;
+}
+.list-title div:nth-child(7) {
+  width: 70px;
+}
+.list-title div:nth-child(8) {
+  width: 90px;
+}
+.list-title div:nth-child(9) {
+  width: 70px;
+}
+.green-text {
+  color: #a3cebc;
+}
+.red-text {
+  color: #e4b3b6;
+}
+.block-curency {
+  padding: 15px 0px;
+}
+.item-curency div {
+  font-size: 12px;
+  font-weight: 500;
 }
