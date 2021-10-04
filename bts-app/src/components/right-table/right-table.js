@@ -1,7 +1,23 @@
-import React from "react";
+import React, {Component} from "react";
 import "./right-table.css";
 
-const RightTable = ({activeItem}) => {
+export default class RightTable extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {value: 'USD'};
+
+    this.handleChange = this.handleChange.bind(this);
+  };
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  render() {
+
+    const activeInstance = this.props.activeItem;
+
     return (
       <div className="right-table">
         <div className="profit-curency">
@@ -12,9 +28,9 @@ const RightTable = ({activeItem}) => {
                     <input type="radio" className="input-select-change" name="list" value="not_changed" id="bg" defaultChecked />
                     <input type="radio" className="input-select-change" name="list" value="not_changed" id="select" />
                     <div className="items">
-                      <input type="radio" name="list" className="input-select-change" value="first_value" id="list[0]" />
-                      <label htmlFor="list[0]">UA</label>
-                      <input type="radio" className="input-select-change" name="list" value="second_value" id="list[1]" />
+                      <input type="radio" name="list" className="input-select-change" onChange={this.handleChange} value="UAH" id="list[0]" />
+                      <label htmlFor="list[0]">UAH</label>
+                      <input type="radio" className="input-select-change" name="list" onChange={this.handleChange} value="EUR" id="list[1]" />
                       <label htmlFor="list[1]">EUR</label>
                       <span id="text">USD</span>
                     </div>
@@ -30,19 +46,19 @@ const RightTable = ({activeItem}) => {
           <div className="curency-instances df-c">
             <div className="most-profit item">
               <div className="title-item">Most profit instance</div>
-              <div className="curency-value">BTS-USD</div>
+              <div className="curency-value">BTS-{this.state.value}</div>
             </div>
             <div className="active-curency item">
               <div className="title-item">Active instance</div>
-              <div className="curency-value">{activeItem}</div>
+              <div className="curency-value">{activeInstance}</div>
             </div>
             <div className="total-curency item">
               <div className="title-item">Total instance</div>
-              <div className="curency-value">6</div>
+              <div className="curency-value">5</div>
             </div>
           </div>
         </div>
       </div>
     );
+  };
 };
-export default RightTable;

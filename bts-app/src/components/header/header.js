@@ -9,7 +9,7 @@ const Header = () => {
     <div className="header container">
       <nav className="nav-header">
         <ul className="nav-list df">
-          <li>DASHBOARD</li>
+          <li className="active">DASHBOARD</li>
           <li>INSTANCES</li>
           <li>PAIRS</li>
           <li>ABOUT</li>
